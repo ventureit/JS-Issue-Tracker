@@ -11,16 +11,21 @@
     
     
     </head>
-    <body onload="fetchIssues()">
-      <div class="container">
+    <body onload="fetchIssues()"><!--Attaching to body makes sure that function is called each time app loads-->
+      <div class="container"><!--COntain all other HTML here-->
+        <!--Header-->
         <h1>Business Serve Pickup Form <small>by Conrad Addo</small></h1>
+        <!--Jumbotron Box-->
         <div class="jumbotron">
+          <!--Header inside jumbotron-->
           <h3>Add New Issue:</h3>
+          <!--Form input section-->
           <form id="issueInputForm">
             <div class="form-group">
               <label for="issueDescInput">Description</label>
               <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
             </div>
+            <!--Severity-->
             <div class="form-group">
               <label for="issueDescInput">Severity</label>
                 <select class="form-control" id="issueSeverityInput">
@@ -29,21 +34,25 @@
                     <option value="Low">Gatwick</option>
                 </select>
             </div>
+            <!--Assigned To-->
             <div class="form-group">
               <label for="issueDescInput">Assigned To</label>
               <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
             </div>
+
+            <!--Submit-->
             <button type="submit" class="btn btn-primary">Add</button>
           </form>
         </div>
         <div class="row">
-          <div class="col-lg-12">
-            <div id="issuesList">
+          <div class="col-lg-12"><!--Bootstrap Grid of 12 large columns-->
+            <div id="issuesList"><!--Here we will pull the needed HTML code with JS asn place the result within this element-->
             </div>
           </div>
         </div>
+        <!--Made by footer section-->
         <div class="footer">
-          <p>&copy CodingTheSmartWay.com</p>
+          <p>&copy Conrad Addo</p>
         </div>
       </div>
 
